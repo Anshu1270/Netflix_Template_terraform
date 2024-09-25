@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Netflix Template</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #141414;
+            color: white;
+        }
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+            background-color: #141414;
+        }
+        .navbar h1 {
+            color: red;
+            margin: 0;
+        }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            gap: 20px;
+        }
+        .navbar ul li {
+            display: inline;
+        }
+        .navbar ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        .container {
+            margin: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .container img {
+            width: 300px;
+            height: 450px;
+            border-radius: 10px;
+            transition: transform 0.2s;
+        }
+        .container img:hover {
+            transform: scale(1.1);
+        }
+        .title {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <h1>Netflix</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">TV Shows</a></li>
+            <li><a href="#">Movies</a></li>
+            <li><a href="#">Latest</a></li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="title">Best Web Series</div>
+
+    <div class="container">
+        <div class="poster">
+            <img src="https://storiesfromtomorrow.com/wp-content/uploads/2022/11/1899new.jpg">
+        </div>
+        <div class="poster">
+            <img src="https://www.google.com/url?sa=i&url=http%3A%2F%2Ft3.gstatic.com%2Fimages%3Fq%3Dtbn%3AANd9GcQzBPeJBL1nrbE44py9eA0PFWzRQjQlW4NwjIBKuOMjVi4ou8UR&psig=AOvVaw1grfLWk37z-plwz6BvDcip&ust=1727324933105000&source=images&cd=vfe&opi=89978449&ved=0CBQQjRxqFwoTCLDP-_Cg3YgDFQAAAAAdAAAAABAE">
+        </div>
+        <div class="poster">
+            <img src="https://resizing.flixster.com/ITt1FPrFePNR6FSqZrZK7BocG2U=/ems.cHJkLWVtcy1hc3NldHMvdHZzZWFzb24vUlRUVjEwMTMyOTMud2VicA==">
+        </div>
+    </div>
+</body>
+</html>
