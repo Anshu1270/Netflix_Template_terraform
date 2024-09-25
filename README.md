@@ -3,4 +3,5 @@ Host a Netflix clone on s3 using terraform
 
 Final Output
 
-![image](https://github.com/user-attachments/assets/82cb10a2-f474-432e-bf22-26eecf6673f9)
+
+![Output](https://github.com/user-attachments/assets/69b0413d-6478-4c26-81fb-66d175ddc98c)
