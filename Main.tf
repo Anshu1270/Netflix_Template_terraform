@@ -1,10 +1,10 @@
-#Create a bucket
+#Bucket creation 
 
 resource "aws_s3_bucket" "my-bucket" {
   bucket = var.bucketname
 }
 
-#Bucket ACL
+#Configuring bucket acl
 
 resource "aws_s3_bucket_ownership_controls" "s3bucoc" {
   bucket = aws_s3_bucket.my-bucket.id
@@ -33,7 +33,7 @@ resource "aws_s3_bucket_acl" "s3bucacl" {
 }
 
 
-#Insert object
+#Uploading objects and make them public
 
 resource "aws_s3_object" "object1" {
   bucket = aws_s3_bucket.my-bucket.id
@@ -53,7 +53,7 @@ resource "aws_s3_object" "object2" {
 }
 
 
-# Website config
+# Configuring Website
 
 resource "aws_s3_bucket_website_configuration" "s3wc" {
   bucket = aws_s3_bucket.my-bucket.id
